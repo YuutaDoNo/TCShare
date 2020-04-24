@@ -48,7 +48,7 @@ class ctyun implements contentProvider {
         return $this->sky;
     }
     private function finpath($path){
-        return TC::path("/我的应用/".$this->FD."/".$this->BASE."/".$path,false);
+        return TC::path($this->BASE."/".$path,false);
     }
     function getRedirect($url){
         $client = new GuzzleClient();

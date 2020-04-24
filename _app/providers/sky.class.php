@@ -428,7 +428,7 @@ class SkyHandle
     function get($url,$method,$access_token,$parameters = array()) {
         $access_token=$this->token;
         $time=gmdate("D, d M Y H:i:s")." GMT";
-        $wurl = "https://api.cloud.189.cn" . $url . "?" .http_build_query($parameters);
+        $wurl = "https://api.cloud189.cf" . $url . "?" .http_build_query($parameters);
         $stxt=urldecode(http_build_query(array(
             "AccessToken"=>$this->token,
             "Operate"=>"GET",
